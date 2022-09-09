@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CoverImage:Decodable, Identifiable {
+struct CoverImage:Codable, Identifiable {
     let id:Int
     let name:String
 }

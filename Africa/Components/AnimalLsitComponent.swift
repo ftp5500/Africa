@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct AnimalLsitComponent: View {
+    //MARK: - PROPERTIES
+    var animal:Animal
+    //MARK: - FUNCTIONS
+    
+    //MARK: - BODY
+
     var body: some View {
    
         HStack(alignment: .top , spacing: 16){
-                    Image("lion")
+            Image(animal.image)
                         .resizable()
                         .scaledToFill()
                         .frame( width: 90 ,height: 90)
@@ -20,29 +26,35 @@ struct AnimalLsitComponent: View {
                         )
                     
                     VStack(alignment: .leading, spacing: 8){
-                        Text("Title")
+                        Text(animal.name)
                             .font(.title2)
                             .fontWeight(.heavy)
                             .foregroundColor(.accentColor)
                         
-                        Text("The world's most social felines, lions roam the savannas and grasslands of the African continent")
+                        Text(animal.headline)
                             .font(.footnote)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
                             .lineLimit(2)
+                            .padding(.trailing , 12)
 
-                    }
+                    }//: VStack
+                    
                 
                     
-                }
+                }//: HSTACK
+        .listRowBackground(Color.clear)
             
         
     }
 }
 
+//MARK: - PREVIEW
 struct AnimalLsitComponent_Previews: PreviewProvider {
+    static let animals:[Animal] = Bundle.main.decode("animals.json")
+
     static var previews: some View {
-        AnimalLsitComponent()
+        AnimalLsitComponent(animal: animals[1])
             .previewLayout(.sizeThatFits)
             .previewDevice("iPhone 12")
             .padding()
