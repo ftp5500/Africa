@@ -22,18 +22,59 @@ struct MapView: View {
     //MARK: - FUNCTIONS
     
     //MARK: - BODY
-
+    
     var body: some View {
         //: No1 BASIC MAP
-//        Map(coordinateRegion: $region) 
+        //        Map(coordinateRegion: $region)
         
         //: NO2 ADVANCED MAP
         Map(coordinateRegion: $region, annotationItems: locations, annotationContent: {
             item in
-            MapPin(coordinate: item.location, tint: .accentColor)
-            
+            //: CUSTOM AS YOU DESIGN
+            MapAnnotation(coordinate: item.location) {
+                MapAnnotationComponent(locationImage: item)
+            }
         })
-        
+        .overlay(
+            HStack(alignment: .center, spacing: 12) {
+                Image("compass")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 48, height: 48, alignment: .center)
+                VStack(alignment:.leading , spacing: 8){
+                    HStack{
+                     Text("Latitude:")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                    }
+                    Divider()
+                    
+                    HStack{
+                     Text("Longitude:")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                    }
+                }
+            }//: HSTACK
+                .padding(.vertical , 12)
+                .padding(.horizontal , 16)
+                .background(
+                    Color.black
+                    .cornerRadius(8)
+                    .opacity(0.6)
+                )
+                .padding()
+            ,alignment: .top
+                
+        )
     }
 }
 //MARK: - PREVIEW

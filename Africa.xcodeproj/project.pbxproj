@@ -11,6 +11,8 @@
 		4149232328D3B1AE00B308D7 /* VideoPlayerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149232228D3B1AE00B308D7 /* VideoPlayerComponent.swift */; };
 		4149232628D3B50D00B308D7 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149232528D3B50D00B308D7 /* VideoPlayerHelper.swift */; };
 		4149232828D6C86100B308D7 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149232728D6C86100B308D7 /* LocationModel.swift */; };
+		4149232A28D9FF7D00B308D7 /* MapAnnotationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149232928D9FF7D00B308D7 /* MapAnnotationComponent.swift */; };
+		4149232C28DA2E9700B308D7 /* MotionAnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4149232B28DA2E9700B308D7 /* MotionAnimationComponent.swift */; };
 		4176E22928BA140100DC42D2 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 4176E22528BA13FF00DC42D2 /* animals.json */; };
 		4176E22A28BA140100DC42D2 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 4176E22628BA140000DC42D2 /* videos.json */; };
 		4176E22B28BA140100DC42D2 /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4176E22728BA140000DC42D2 /* covers.json */; };
@@ -52,6 +54,8 @@
 		4149232228D3B1AE00B308D7 /* VideoPlayerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerComponent.swift; sourceTree = "<group>"; };
 		4149232528D3B50D00B308D7 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		4149232728D6C86100B308D7 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		4149232928D9FF7D00B308D7 /* MapAnnotationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationComponent.swift; sourceTree = "<group>"; };
+		4149232B28DA2E9700B308D7 /* MotionAnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationComponent.swift; sourceTree = "<group>"; };
 		4176E22528BA13FF00DC42D2 /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		4176E22628BA140000DC42D2 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		4176E22728BA140000DC42D2 /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				41B708E028C99B39007C39A0 /* ExternalWebComponent.swift */,
 				4149232028D2562700B308D7 /* VideoListItemComponent.swift */,
 				4149232228D3B1AE00B308D7 /* VideoPlayerComponent.swift */,
+				4149232928D9FF7D00B308D7 /* MapAnnotationComponent.swift */,
+				4149232B28DA2E9700B308D7 /* MotionAnimationComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -314,12 +320,14 @@
 				41B708DB28C75350007C39A0 /* InsetGalleryComponent.swift in Sources */,
 				41948D6728B90F510091E343 /* ContentView.swift in Sources */,
 				41B708DD28C79AE9007C39A0 /* InsetFactComponent.swift in Sources */,
+				4149232A28D9FF7D00B308D7 /* MapAnnotationComponent.swift in Sources */,
 				4176E23528BA666500DC42D2 /* AnimalLsitComponent.swift in Sources */,
 				41948D9728B973E50091E343 /* CoverImageComponent.swift in Sources */,
 				4149232128D2562700B308D7 /* VideoListItemComponent.swift in Sources */,
 				41948D9328B96EAC0091E343 /* MainView.swift in Sources */,
 				41B708E128C99B3A007C39A0 /* ExternalWebComponent.swift in Sources */,
 				41948D6528B90F510091E343 /* AfricaApp.swift in Sources */,
+				4149232C28DA2E9700B308D7 /* MotionAnimationComponent.swift in Sources */,
 				41B708D528BAAF29007C39A0 /* AnimalModel.swift in Sources */,
 				4149232628D3B50D00B308D7 /* VideoPlayerHelper.swift in Sources */,
 				41B708D728BB194E007C39A0 /* AnimalDetailComponent.swift in Sources */,
